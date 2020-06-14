@@ -1,0 +1,22 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+  repository_dispatch:
+    types: [run_build]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: orbisdev/orbisdev-liborbis:latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Install dependencies
+      run: |
+        apk add build-base clang
+
+    - name: Prepare OrbisGL
+      run: |
+        make clean all install
