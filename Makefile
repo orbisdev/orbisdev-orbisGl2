@@ -19,7 +19,7 @@ $(OutPath)/$(TargetFile).a: $(ObjectFiles)
 
 install:
 	@cp $(OutPath)/$(TargetFile).a $(ORBISDEV)/usr/lib
-	@cp include/orbisGl2.h $(ORBISDEV)/ussr/include/orbis
+	@cp include/orbisGl2.h $(ORBISDEV)/usr/include/orbis
 	@cp include/orbisGl2raymath.h $(ORBISDEV)/usr/include/orbis
 	@echo "$(TargetFile) Installed!"
 
