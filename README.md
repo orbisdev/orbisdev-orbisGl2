@@ -1,4 +1,4 @@
-# orbisGl2
+# orbisGl2 DEPRECATED ARCHIVED
 orbisGl2 liborbis new graphic backend based on raylib
 
 <img align="left" src="https://github.com/raysan5/raylib/blob/master/logo/raylib_256x256.png" width=256>
